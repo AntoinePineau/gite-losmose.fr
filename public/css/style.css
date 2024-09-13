@@ -13708,7 +13708,7 @@ html.rd-navbar-fixed-linked .page {
 	columns: 2;
 }
 
-.rd-navbar-sidebar .rd-navbar-megamenu li {
+.rd-navbar-sidebar .rd-navbar-megamenu li, .break-inside-avoid {
 	-webkit-column-break-inside: avoid;
 	break-inside: avoid;
 }

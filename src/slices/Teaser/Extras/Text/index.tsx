@@ -9,16 +9,16 @@ export default function Text ({ slice }: TeaserProps): JSX.Element {
   const dancingScriptClassName = dancingScript.className;
   return (
     <div className="cell-sm-12 cell-md-8 cell-lg-8 reveal-flex wow fadeInUp" data-wow-delay=".3s" style={{visibility: "visible", animationDelay: "0.3s", animationName: "fadeInUp"}}>
-      <div className="section-wrap-content-var-1">
-        <div className="bg-primary section-wrap-content-var-1-inner range">
+      <div className="bg-primary section-wrap-content-var-1">
+        <div className="section-wrap-content-var-1-inner range">
           <h2 className={dancingScriptClassName}>{slice.primary.title}</h2>
           <PrismicRichText field={slice.primary.description} />
           <div className="cell-sm-12 cell-md-12">
-            <div className="columns-2 gap-8">
+            <div className="list-column-3">
               {slice.variation === "extras" && (
                 slice.primary.options.map((item: { title: KeyTextField; description: RichTextField }, index: number) => (
-                  <div key={item.title ?? index} className={clsx(dancingScriptClassName, "break-inside-avoid mb-8")}>
-                    <h3>{item.title}</h3>
+                  <div key={item.title ?? index} className="break-inside-avoid mb-8">
+                    <h3 className={dancingScriptClassName}>{item.title}</h3>
                     <PrismicRichText field={item.description} />
                   </div>
                 ))

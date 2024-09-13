@@ -16,7 +16,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
   const dancingScriptClassName = dancingScript.className;
 
   return (
-    <div id="contact" className="shell-wide">{
+    <div id="contact" className="shell-wide">
       <div className="range range-30 range-xs-center">
         <div className="cell-md-7">
           <section className="section">

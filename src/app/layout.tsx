@@ -16,6 +16,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
     <html lang="fr">
       <head>
         <Analytics siteId="G-M4JH6MPTCC"/>
+        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=gite-losmose"></script>
       </head>
       <body>
         <div className="text-center relative overflow-hidden">

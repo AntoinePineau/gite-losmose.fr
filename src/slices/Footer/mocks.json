@@ -1,0 +1,80 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"contact_section": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "becoming",
+									"type": "Text"
+								}
+							],
+							[
+								"mail_address",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "animal",
+									"type": "Text"
+								}
+							],
+							[
+								"phone_number",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "term",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"information_section": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "difference",
+									"type": "Text"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Magna do culpa exercitation dolore id Lorem magna occaecat esse labore ex sint Lorem. Id nisi sunt et quis ipsum velit occaecat aute."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"uuid": {
+				"__TYPE__": "FieldContent",
+				"value": "tears",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

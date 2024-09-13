@@ -1,0 +1,49 @@
+{
+  "id": "contact",
+  "type": "SharedSlice",
+  "name": "Contact",
+  "description": "Contact",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "uuid": {
+          "type": "Text",
+          "config": {
+            "label": "UUID",
+            "placeholder": "Section UUID"
+          }
+        },
+        "mail_subjects": {
+          "type": "Group",
+          "config": {
+            "label": "Mail subjects",
+            "repeat": true,
+            "fields": {
+              "subject": {
+                "type": "Text",
+                "config": {
+                  "label": "Subject",
+                  "placeholder": "Subject in the contact form"
+                }
+              }
+            }
+          }
+        },
+        "google_maps_url": {
+          "type": "Text",
+          "config": {
+            "label": "Google Maps URL",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

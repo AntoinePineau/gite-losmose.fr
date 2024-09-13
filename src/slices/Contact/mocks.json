@@ -1,0 +1,37 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"mail_subjects": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"subject",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "type",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"uuid": {
+				"__TYPE__": "FieldContent",
+				"value": "ship",
+				"type": "Text"
+			},
+			"google_maps_url": {
+				"__TYPE__": "FieldContent",
+				"value": "trap",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

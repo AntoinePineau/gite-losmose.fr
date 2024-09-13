@@ -1,0 +1,161 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "summer",
+				"type": "Text"
+			},
+			"photo": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+										"width": 6000,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?rect=1500%2C0%2C3000%2C4000&w=1200&h=1600",
+									"width": 1200,
+									"height": 1600,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 1500,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {
+										"1600x1200": {
+											"origin": {
+												"id": "1600x1200",
+												"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e",
+												"width": 6000,
+												"height": 4000
+											},
+											"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?rect=333%2C0%2C5333%2C4000&w=1600&h=1200",
+											"width": 1600,
+											"height": 1200,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 333,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"credits": null,
+											"alt": null
+										},
+										"1199x800": {
+											"origin": {
+												"id": "1199x800",
+												"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
+												"width": 4380,
+												"height": 2895
+											},
+											"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?rect=21%2C0%2C4339%2C2895&w=1199&h=800",
+											"width": 1199,
+											"height": 800,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 21,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"credits": null,
+											"alt": null
+										},
+										"533x800": {
+											"origin": {
+												"id": "533x800",
+												"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+												"width": 3882,
+												"height": 2584
+											},
+											"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?rect=1080%2C0%2C1722%2C2584&w=533&h=800",
+											"width": 533,
+											"height": 800,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 1080,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"credits": null,
+											"alt": null
+										},
+										"584x800": {
+											"origin": {
+												"id": "584x800",
+												"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+												"width": 4000,
+												"height": 6000
+											},
+											"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?rect=0%2C260%2C4000%2C5479&w=584&h=800",
+											"width": 584,
+											"height": 800,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 0,
+													"y": 260
+												},
+												"background": "transparent"
+											},
+											"credits": null,
+											"alt": null
+										},
+										"1200x800": {
+											"origin": {
+												"id": "1200x800",
+												"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+												"width": 3882,
+												"height": 2584
+											},
+											"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?rect=3%2C0%2C3876%2C2584&w=1200&h=800",
+											"width": 1200,
+											"height": 800,
+											"edit": {
+												"zoom": 1,
+												"crop": {
+													"x": 3,
+													"y": 0
+												},
+												"background": "transparent"
+											},
+											"credits": null,
+											"alt": null
+										}
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"uuid": {
+				"__TYPE__": "FieldContent",
+				"value": "must",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

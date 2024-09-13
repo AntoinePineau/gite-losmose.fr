@@ -1,0 +1,40 @@
+{
+  "id": "news",
+  "type": "SharedSlice",
+  "name": "News",
+  "description": "News",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "uuid": {
+          "type": "Text",
+          "config": {
+            "label": "UUID",
+            "placeholder": "Section UUID"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": "News title"
+          }
+        },
+        "taggbox_widget_id": {
+          "type": "Text",
+          "config": {
+            "label": "Taggbox Widget ID",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

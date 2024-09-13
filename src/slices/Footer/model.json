@@ -1,0 +1,81 @@
+{
+  "id": "footer",
+  "type": "SharedSlice",
+  "name": "Footer",
+  "description": "Footer",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "uuid": {
+          "type": "Text",
+          "config": {
+            "label": "UUID",
+            "placeholder": "Section UUID"
+          }
+        },
+        "information_section": {
+          "type": "Group",
+          "config": {
+            "label": "Information section",
+            "repeat": true,
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Information section title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "Information section description",
+                  "allowTargetBlank": false,
+                  "single": "list-item"
+                }
+              }
+            }
+          }
+        },
+        "contact_section": {
+          "type": "Group",
+          "config": {
+            "label": "Contact section",
+            "repeat": false,
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Contact section title"
+                }
+              },
+              "mail_address": {
+                "type": "Text",
+                "config": {
+                  "label": "Mail address",
+                  "placeholder": ""
+                }
+              },
+              "phone_number": {
+                "type": "Text",
+                "config": {
+                  "label": "Phone number",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

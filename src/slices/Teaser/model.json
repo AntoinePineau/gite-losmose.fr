@@ -1,0 +1,245 @@
+{
+  "id": "teaser",
+  "type": "SharedSlice",
+  "name": "Teaser",
+  "description": "Teaser",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "uuid": {
+          "type": "Text",
+          "config": {
+            "label": "UUID",
+            "placeholder": "Section ID"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": "Teaser title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Teaser Description",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "button": {
+          "type": "Group",
+          "config": {
+            "label": "Button",
+            "repeat": false,
+            "fields": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": ""
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Image alignment",
+            "placeholder": "",
+            "options": [
+              "left",
+              "right"
+            ],
+            "default_value": "left"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "tarifs",
+      "name": "Tarifs",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "uuid": {
+          "type": "Text",
+          "config": {
+            "label": "UUID",
+            "placeholder": "Section UUID"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": "Teaser title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Teaser Description",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "button": {
+          "type": "Group",
+          "config": {
+            "label": "Button",
+            "repeat": false,
+            "fields": {
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Label",
+                  "placeholder": ""
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Image alignment",
+            "placeholder": "",
+            "options": [
+              "left",
+              "right"
+            ],
+            "default_value": "left"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "extras",
+      "name": "Extras",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "uuid": {
+          "type": "Text",
+          "config": {
+            "label": "UUID",
+            "placeholder": "Section UUID"
+          }
+        },
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": "Teaser title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Teaser Description",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Image alignment",
+            "placeholder": "",
+            "options": [
+              "left",
+              "right"
+            ],
+            "default_value": "left"
+          }
+        },
+        "options": {
+          "type": "Group",
+          "config": {
+            "label": "Options",
+            "repeat": true,
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": "Option title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description",
+                  "placeholder": "Option description",
+                  "allowTargetBlank": true,
+                  "single": "list-item"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

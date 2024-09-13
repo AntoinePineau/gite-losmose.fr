@@ -13,9 +13,10 @@ const Teaser = ({ slice }: TeaserProps): JSX.Element => {
         <div className="section-wrap-content-var-1-inner">
           <h2 className={dancingScriptClassName}>{slice.primary.title}</h2>
           <PrismicRichText field={slice.primary.description} />
-          {slice.primary.button.map((item) => (
+          {slice.variation === "tarifs" && (
+            slice.primary.button.map((item) => (
             <PrismicNextLink key={item.label} field={item.link} className="button button-effect-ujarak button-lg button-secondary-outline button-square">{item.label}</PrismicNextLink>
-          ))}
+          )))}
         </div>
       </div>
     </div>

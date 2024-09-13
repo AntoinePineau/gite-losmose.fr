@@ -12,9 +12,10 @@ const Teaser = ({ slice }: TeaserProps): JSX.Element => {
     <div className="cell-sm-6 cell-md-5">
       <h3 className={dancingScriptClassName}>{slice.primary.title}</h3>
       <PrismicRichText field={slice.primary.description} />
-      {slice.primary.button.map((item) => (
+      {slice.variation === "default" && (
+        slice.primary.button && slice.primary.button.map((item: any) => (
         <PrismicNextLink key={item.label} className="button button-primary button button-square button-effect-ujarak button-lg" field={item.link}>{item.label}</PrismicNextLink>
-      ))}
+      )))}
     </div>
   );
 };

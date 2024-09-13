@@ -4,7 +4,7 @@ import { dancingScript } from "@/app/components/Header";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 /**
- * Props for `Contact`.
+ * Props for `Contact`. TODO
  */
 export type ContactProps = SliceComponentProps<Content.ContactSlice>;
 
@@ -16,7 +16,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
   const dancingScriptClassName = dancingScript.className;
 
   return (
-    <div id="contact" className="shell-wide">{/*
+    <div id="contact" className="shell-wide">{
       <div className="range range-30 range-xs-center">
         <div className="cell-md-7">
           <section className="section">
@@ -83,7 +83,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
             </form>
           </div>
         </div>
-      </div>*/}
+      </div>
     </div>
   );
 };

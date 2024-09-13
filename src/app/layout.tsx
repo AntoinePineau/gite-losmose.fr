@@ -25,8 +25,8 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         <main>
           {children}
         </main>        
-        <script src="/js/core.min.js"></script>
-        <script src="/js/script.js"></script>
+        <script src="/js/core.min.js" defer/>
+        <script src="/js/script.js" defer/>
       </body>
     </html>
   );

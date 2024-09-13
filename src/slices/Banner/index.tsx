@@ -17,7 +17,7 @@ const Banner = ({ slice, index, slices, context }: BannerProps): JSX.Element => 
       <div className="shell-wide">
         <div className="range range-30 range-xs-center">
           <Slider slice={slice} index={index} slices={slices} context={context}/>
-          <Form slice={slice} index={index} slices={slices} context={context}/>
+          <Form />
         </div>
       </div>
     </section>

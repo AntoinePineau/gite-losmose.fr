@@ -15,7 +15,7 @@ export default function Form({ slice }: BannerProps): JSX.Element {
               <div className="swiper-container swiper-slider swiper-style-2" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="slide" data-direction="vertical">
                 <div className="swiper-wrapper">
                 {slice.primary.slide.map((item) => (
-                  <div className="swiper-slide" data-slide-bg={item.background_image.url}>
+                  <div  key={item.title} className="swiper-slide" data-slide-bg={item.background_image.url}>
                     <div className="swiper-slide-caption">
                       <div className="shell text-sm-left">
                         <h1 className={dancingScriptClassName} data-caption-animate="slideInDown" data-caption-delay="100">{item.title}</h1>

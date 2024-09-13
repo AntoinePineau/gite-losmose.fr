@@ -21,6 +21,7 @@
     "react-google-recaptcha": "^3.1.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.7.1",
     "@slicemachine/adapter-next": "^0.3.49",
     "@types/node": "^20",
     "@types/react": "^18",

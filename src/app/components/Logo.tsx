@@ -10,7 +10,7 @@ const dancingScript = Dancing_Script({
 export default function Logo() {
     return (
     <>
-        <title>Logo L'Osmose</title>
+        <title>Logo L&#39;Osmose</title>
         <text id="osmose" style={{fontWeight: 700, transform: "matrix(9.142,0,0,9.142,396.653,762.86)"}}>
             <tspan className={dancingScript.className} style={{ whiteSpace:"pre", fontSize: "50px", fill: "#000000", fontWeight: 400 }} x="0" y="0">osm ose</tspan>
         </text>

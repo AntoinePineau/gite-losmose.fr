@@ -1,0 +1,8 @@
+[build]
+  functions = "functions/"
+  base = "."
+  publish = "."
+  command = "npm install sparkpost --save-dev"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

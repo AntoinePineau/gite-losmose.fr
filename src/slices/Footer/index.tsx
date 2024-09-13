@@ -22,7 +22,7 @@ const Footer = ({ slice }: FooterProps): JSX.Element => {
           <div className="shell-wide">
             <div className="range range-50">
               {slice.primary.information_section.map((item) => (
-                <div className="cell-sm-6 cell-md-3 cell-lg-2 wow fadeInUp" data-wow-delay=".1s">
+                <div key={item.title} className="cell-sm-6 cell-md-3 cell-lg-2 wow fadeInUp" data-wow-delay=".1s">
                   <div className="page-footer-minimal-inner">
                     <h4 className={clsx(dancingScriptClassName, "font-bold")}>{item.title}</h4>
                     <PrismicRichText field={item.description} />
@@ -30,7 +30,7 @@ const Footer = ({ slice }: FooterProps): JSX.Element => {
                 </div>
               ))}
               {slice.primary.contact_section.map((item) => (
-                <div className="cell-sm-6 cell-md-5 cell-lg-2 wow fadeInUp" data-wow-delay=".2s">
+                <div key={item.title} className="cell-sm-6 cell-md-5 cell-lg-2 wow fadeInUp" data-wow-delay=".2s">
                   <div className="page-footer-minimal-inner">
                     <h4 className={clsx(dancingScriptClassName, "font-bold")}>{item.title}</h4>
                     <ul className="list-unstyled">

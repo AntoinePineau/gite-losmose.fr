@@ -61,7 +61,7 @@ export default async function Header() {
                       <div className="rd-navbar-nav-scroll-holder">
                         <ul className="rd-navbar-nav">
                           {page.data.menu.map((item) => (
-                            <li className="inline-block transition duration-200">
+                            <li key={item.menu_id} className="inline-block transition duration-200">
                               <a className={clsx(dancingScript.className, "relative inline-block text-white text-28 transition duration-200")} href={item.menu_id || ""}>{item.label}</a>
                             </li>
                           ))}

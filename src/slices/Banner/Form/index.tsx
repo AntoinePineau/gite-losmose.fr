@@ -5,7 +5,7 @@ import { dancingScript } from "@/app/components/Header";
 
 export type BannerProps = SliceComponentProps<Content.BannerSlice>;
 
-export default function Form({ slice }: BannerProps): JSX.Element {
+export default function Form(): JSX.Element {
     const dancingScriptClassName = dancingScript.className;
     return (
         <div className="cell-lg-4 cell-xl-3 reveal-lg-flex">

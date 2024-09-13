@@ -14,7 +14,7 @@ export default function Text ({ slice }: TeaserProps): JSX.Element {
           <PrismicRichText field={slice.primary.description} />
           <div className="cell-sm-12 cell-md-6">
             {slice.primary.options.map((item: { title:string; description: RichTextField }) => (
-              <div className="group">
+              <div key={item.title} className="group">
                 <h3>{item.title}</h3>
                 <PrismicRichText field={item.description} />
               </div>

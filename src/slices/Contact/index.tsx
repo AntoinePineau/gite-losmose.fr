@@ -69,7 +69,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
                   <div className="form-wrap form-wrap-validation">
                     <select  required={true} className="form-input select-filter" data-minimum-results-search="-1" data-placeholder="_" data-constraints="@Required" name="subject">
                       {slice.primary.mail_subjects.map((item) => (
-                        <option value={item.subject||""}>{item.subject}</option>
+                        <option key={item.subject} value={item.subject||""}>{item.subject}</option>
                       ))}
                     </select>
                   </div>

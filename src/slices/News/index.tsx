@@ -18,7 +18,7 @@ const News = ({ slice }: NewsProps): JSX.Element => {
       <div className="shell-wide text-center">
         <h2 className={dancingScriptClassName}>{slice.primary.title}</h2>
         <div className="taggbox" style={{width:"100%", height:"100%"}} data-widget-id={slice.primary.taggbox_widget_id} data-tags="false"></div>
-        <script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
+        <script src="https://widget.taggbox.com/embed-lite.min.js" defer />
       </div>
     </section>
   );

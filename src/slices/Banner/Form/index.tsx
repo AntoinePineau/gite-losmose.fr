@@ -46,7 +46,7 @@ export default function Form(): JSX.Element {
                             <div className="form-wrap form-wrap-validation">
                                 <select className="form-input select-filter" data-minimum-results-search="-1" data-placeholder="2" data-constraints="@Required" name="adults">
                                     <option value="1">1</option>
-                                    <option value="2" defaultValue={2}>2</option>
+                                    <option value="2" selected={true}>2</option>
                                 </select>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
   functions = "functions/"
   base = "."
   publish = ".next/"
-  command = "next build ; next start"
+  command = "next build"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

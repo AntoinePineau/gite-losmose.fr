@@ -15,7 +15,7 @@ export default async function Header() {
     return (
         <header className="page-header" style={{paddingBottom: "24px"}}>
             <div className="rd-navbar-wrap" style={{height: "239px"}}>
-              <nav className="pl-3.75 pr-3.75 rd-navbar rd-navbar-default-with-top-panel rd-navbar-original rd-navbar-fullwidth" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-fullwidth" data-md-stick-up-offset="90px" data-lg-stick-up-offset="150px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true">
+              <nav className={clsx("pl-3.75 pr-3.75", "rd-navbar rd-navbar-default-with-top-panel rd-navbar-original rd-navbar-fullwidth")} data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fullwidth" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-lg-device-layout="rd-navbar-fullwidth" data-md-stick-up-offset="90px" data-lg-stick-up-offset="150px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true">
                 <div className="rd-navbar-top-panel rd-navbar-collapse toggle-original-elements">
                   <div className="rd-navbar-top-panel-inner">
                     <div className="left-side">

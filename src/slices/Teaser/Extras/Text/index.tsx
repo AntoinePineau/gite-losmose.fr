@@ -12,10 +12,10 @@ export default function Text ({ slice }: TeaserProps): JSX.Element {
         <div className="section-wrap-content-var-1-inner range">
           <h2 className={dancingScriptClassName}>{slice.primary.title}</h2>
           <PrismicRichText field={slice.primary.description} />
-          <div className="cell-sm-12 cell-md-6">
+          <div className="cell-sm-12 cell-md-12">
             {slice.variation === "extras" && (
-              slice.primary.options.map((item: { title: KeyTextField; description: RichTextField }) => (
-                <div key={item.title ?? ''} className="group">
+              slice.primary.options.map((item: { title: KeyTextField; description: RichTextField }, index: number) => (
+                <div key={item.title ?? index} className="break-inside-avoid mb-8">
                   <h3>{item.title}</h3>
                   <PrismicRichText field={item.description} />
                 </div>

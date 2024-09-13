@@ -24,14 +24,20 @@ export default function Form(): JSX.Element {
                         <div className="cell-lg-12 cell-md-4 cell-sm-6">
                         <p className="text-uppercase">Arrivée</p>
                         <div className="form-wrap">
-                            <label className="form-label form-label-icon" htmlFor="date-in"><span className="icon icon-primary fa-calendar"></span><span>Date de début de séjour</span></label>
+                            <label className="form-label form-label-icon" htmlFor="date-in">
+                                <span className="icon icon-primary fa-calendar"></span>
+                                <span>Date de début de séjour</span>
+                            </label>
                             <input className="form-input" id="date-in" data-time-picker="date" type="text" name="check_in" data-constraints="@Required"/>
                         </div>
                         </div>
                         <div className="cell-lg-12 cell-md-4 cell-sm-6">
                             <p className="text-uppercase">Départ</p>
                             <div className="form-wrap">
-                                <label className="form-label form-label-icon" htmlFor="date-out"><span className="icon icon-primary fa-calendar"></span><span>Date de fin de séjour</span></label>
+                                <label className="form-label form-label-icon" htmlFor="date-out">
+                                    <span className="icon icon-primary fa-calendar"></span>
+                                    <span>Date de fin de séjour</span>
+                                </label>
                                 <input className="form-input" id="date-out" data-time-picker="date" type="text" name="check_out" data-constraints="@Required"/>
                             </div>
                         </div>
@@ -40,12 +46,14 @@ export default function Form(): JSX.Element {
                             <div className="form-wrap form-wrap-validation">
                                 <select className="form-input select-filter" data-minimum-results-search="-1" data-placeholder="2" data-constraints="@Required" name="adults">
                                     <option value="1">1</option>
-                                    <option value="2" selected={true}>2</option>
+                                    <option value="2" defaultValue={2}>2</option>
                                 </select>
                             </div>
                         </div>
                         <div className="cell-lg-12 cell-md-4">
-                            <button className="button button-primary button-square button-block button-effect-ujarak" type="submit"><span>Vérifier la disponibilité</span></button>
+                            <button className="button button-primary button-square button-block" type="submit">
+                                <span>Vérifier la disponibilité</span>
+                            </button>
                         </div>
                     </div>
                 </form>

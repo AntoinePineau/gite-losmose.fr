@@ -24,7 +24,7 @@ export default function Form({ slice }: BannerProps): JSX.Element {
                           <h4 className={dancingScriptClassName} data-caption-animate="slideInLeft" data-caption-delay="700">{item.description_1}</h4>
                           <h3 className={dancingScriptClassName} data-caption-animate="slideInLeft" data-caption-delay="800">{item.description_2}</h3>
                         </div>
-                        <PrismicNextLink className="button button-effect-ujarak button-lg button-white-outline button-square" field={item.button_link}>
+                        <PrismicNextLink className="button button-lg button-white-outline button-square" field={item.button_link}>
                           {item.button_text}
                         </PrismicNextLink>
                       </div>

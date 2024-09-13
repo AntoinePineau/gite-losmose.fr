@@ -16,7 +16,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
   const dancingScriptClassName = dancingScript.className;
 
   return (
-    <div id="contact" className="shell-wide">
+    <div id="contact" className="shell-wide">{/*
       <div className="range range-30 range-xs-center">
         <div className="cell-md-7">
           <section className="section">
@@ -67,9 +67,9 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
                 <div className="cell-md-6">
                   <p className="text-uppercase">Sujet *</p>
                   <div className="form-wrap form-wrap-validation">
-                    <select  required={true} className="form-input select-filter" data-minimum-results-search="-1" data-placeholder="_" data-constraints="@Required" name="subject">
+                    <select defaultValue={slice.primary.mail_subjects[0]?.subject || ""} required={true} className="form-input select-filter" data-minimum-results-search="-1" data-placeholder="_" data-constraints="@Required" name="subject">
                       {slice.primary.mail_subjects.map((item) => (
-                        <option key={item.subject} value={item.subject||""}>{item.subject}</option>
+                        <option key={item.subject} value={item.subject||""} >{item.subject}</option>
                       ))}
                     </select>
                   </div>
@@ -77,13 +77,13 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
                   <div className="form-wrap form-wrap-validation">
                     <textarea className="form-input" name="message" required={true}></textarea>
                   </div>
-                  <button className="button button-primary button-square button-block button-effect-ujarak" type="submit"><span>Envoyer</span></button>
+                  <button className="button button-primary button-square" type="submit"><span>Envoyer</span></button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 };

@@ -20,9 +20,9 @@ const News = ({ slice }: NewsProps): JSX.Element => {
     script.src = "https://widget.taggbox.com/embed-lite.min.js";
     script.async = true;
     script.onload = () => {
-      // @ts-ignore
+      // @ts-expect-error
       if (window.Taggbox) {
-        // @ts-ignore
+        // @ts-expect-error
         window.Taggbox.loadEmbed();
       }
     };

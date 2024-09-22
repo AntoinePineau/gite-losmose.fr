@@ -17,7 +17,7 @@ export default function Text ({ slice }: TeaserProps): JSX.Element {
             <div className="list-column-3">
               {slice.variation === "extras" && (
                 slice.primary.options.map((item: { title: KeyTextField; description: RichTextField }, index: number) => (
-                  <div key={item.title ?? index} className="break-inside-avoid mb-8">
+                  <div key={item.title ?? index} className={clsx("break-inside-avoid mb-8")}>
                     <h3 className={dancingScriptClassName}>{item.title}</h3>
                     <PrismicRichText field={item.description} />
                   </div>

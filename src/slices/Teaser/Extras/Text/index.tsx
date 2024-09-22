@@ -14,10 +14,14 @@ export default function Text ({ slice }: TeaserProps): JSX.Element {
           <h2 className={dancingScriptClassName}>{slice.primary.title}</h2>
           <PrismicRichText field={slice.primary.description} />
           <div className="cell-sm-12 cell-md-12">
-            <div className="list-column-3">
+            <div className="list-column-2" style={{ columnCount: 2, columnGap: '2rem' }}>
               {slice.variation === "extras" && (
                 slice.primary.options.map((item: { title: KeyTextField; description: RichTextField }, index: number) => (
-                  <div key={item.title ?? index} className={clsx("break-inside-avoid mb-8")}>
+                  <div 
+                    key={item.title ?? index} 
+                    className={clsx("break-inside-avoid")}
+                    style={{ margin: '30px', marginBottom: '2rem' }}
+                  >
                     <h3 className={dancingScriptClassName}>{item.title}</h3>
                     <PrismicRichText field={item.description} />
                   </div>

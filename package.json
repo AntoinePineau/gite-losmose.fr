@@ -13,13 +13,16 @@
     "@prismicio/client": "^7.8.1",
     "@prismicio/next": "^1.6.0",
     "@prismicio/react": "^2.8.0",
+    "@types/react-datepicker": "^7.0.0",
     "cls": "^0.1.5",
     "clsx": "^2.1.1",
     "next": "14.2.10",
     "react": "^18",
+    "react-datepicker": "^7.4.0",
     "react-dom": "^18",
     "react-google-recaptcha": "^3.1.0",
-    "sparkpost": "^2.1.4"
+    "sparkpost": "^2.1.4",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.7.1",

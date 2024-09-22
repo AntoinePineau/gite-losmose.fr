@@ -20,7 +20,7 @@ export default async function Header() {
                   <div className="rd-navbar-top-panel-inner">
                     <div className="left-side">
                       <div className="group"><span className="text-italic">Nous suivre:</span>
-                        <ul className="list-inline">                        
+                        <ul className="inline-block ml-4 text-xl">                        
                           <li>
                             <PrismicNextLink className="icon icon-sm text-blue icon-secondary-5 fa fa-facebook" field={page.data.facebook_link}></PrismicNextLink>
                           </li>

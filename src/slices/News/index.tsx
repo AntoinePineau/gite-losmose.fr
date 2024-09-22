@@ -20,9 +20,9 @@ const News = ({ slice }: NewsProps): JSX.Element => {
     script.src = "https://widget.taggbox.com/embed-lite.min.js";
     script.async = true;
     script.onload = () => {
-      // @ts-expect-error
+      // @ts-expect-error in case Taggbox is not loaded
       if (window.Taggbox) {
-        // @ts-expect-error
+        // @ts-expect-error in case the embed does not load
         window.Taggbox.loadEmbed();
       }
     };

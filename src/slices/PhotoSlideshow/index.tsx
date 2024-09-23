@@ -27,13 +27,13 @@ const PhotoSlideshow = ({ slice }: PhotoSlideshowProps): JSX.Element => {
           <div className="row isotope" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
             <div className="col-xs-12 col-sm-6 col-md-3 grid-sizer"></div>
               {slice.primary.photo.map((item) => {
-                const selectedFormatKey = item.image_format as keyof typeof item.image; // Type assertion to ensure the key exists
+                const selectedFormatKey = item.image_format as keyof typeof item.image;
                 const selectedFormat = item.image[selectedFormatKey];
                 return (
                 <div key={item.image.id} className="col-xs-12 col-sm-6 col-md-3 isotope-item wow fadeInUp" data-filter="Category 1" data-wow-delay=".1s">
                   {selectedFormat && typeof selectedFormat === 'object' && 'url' in selectedFormat && (
                     <a className="portfolio-item thumbnail-classic" href={selectedFormat.url || ""} data-size={selectedFormat.dimensions?.width + 'x' + selectedFormat.dimensions?.height || ""} data-lightgallery="item">
-                      <PrismicNextImage field={selectedFormat} />
+                      <PrismicNextImage field={selectedFormat} style={{ height: selectedFormat.dimensions?.height }}/>
                     </a>
                   )}
                 </div>

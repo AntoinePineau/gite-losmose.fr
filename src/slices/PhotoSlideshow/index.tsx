@@ -26,14 +26,15 @@ const PhotoSlideshow = ({ slice }: PhotoSlideshowProps): JSX.Element => {
         <div className="isotope-wrap">
           <div className="row isotope" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
             <div className="col-xs-12 col-sm-6 col-md-3 grid-sizer"></div>
-              {slice.primary.photo.map((item) => (
+              {slice.primary.photo.map((item) => {
+                return (
                 <div key={item.image.id} className="col-xs-12 col-sm-6 col-md-3 isotope-item wow fadeInUp" data-filter="Category 1" data-wow-delay=".1s">
                   <a className="portfolio-item thumbnail-classic" href={item.image.url||""} data-size={item.image.dimensions?.width+'x'+item.image.dimensions?.height||""} data-lightgallery="item">
-                   <PrismicNextImage field={item.image} width="420" />
+                   <PrismicNextImage field={item.image} />
                   </a>
                   <figure></figure>
                 </div>
-              ))}
+              )})}
           </div>
         </div>
       </div>

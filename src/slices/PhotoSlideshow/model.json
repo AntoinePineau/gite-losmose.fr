@@ -37,34 +37,24 @@
                 "config": {
                   "label": "Image",
                   "constraint": {
-                    "width": 1200,
-                    "height": 1600
+                    "width": 426,
+                    "height": 568
                   },
                   "thumbnails": [
                     {
-                      "name": "1600x1200",
-                      "width": 1600,
-                      "height": 1200
+                      "name": "426x320",
+                      "width": 426,
+                      "height": 320
                     },
                     {
-                      "name": "1199x800",
-                      "width": 1199,
-                      "height": 800
+                      "name": "426x282",
+                      "width": 426,
+                      "height": 282
                     },
                     {
-                      "name": "533x800",
-                      "width": 533,
-                      "height": 800
-                    },
-                    {
-                      "name": "584x800",
-                      "width": 584,
-                      "height": 800
-                    },
-                    {
-                      "name": "1200x800",
-                      "width": 1200,
-                      "height": 800
+                      "name": "426x593",
+                      "width": 426,
+                      "height": 593
                     }
                   ]
                 }

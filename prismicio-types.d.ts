@@ -545,9 +545,7 @@ export interface PhotoSlideshowSliceDefaultPrimaryPhotoItem {
    * - **API ID Path**: photo_slideshow.default.primary.photo[].image
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  image: prismic.ImageField<
-    "1600x1200" | "1199x800" | "533x800" | "584x800" | "1200x800"
-  >;
+  image: prismic.ImageField<"426x320" | "426x282" | "426x593">;
 }
 
 /**

@@ -58,6 +58,20 @@
                     }
                   ]
                 }
+              },
+              "image_format": {
+                "type": "Select",
+                "config": {
+                  "label": "Image Format",
+                  "placeholder": "",
+                  "options": [
+                    "426x568",
+                    "426x320",
+                    "426x282",
+                    "426x593"
+                  ],
+                  "default_value": "426x568"
+                }
               }
             }
           }

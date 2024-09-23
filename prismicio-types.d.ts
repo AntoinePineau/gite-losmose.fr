@@ -546,6 +546,20 @@ export interface PhotoSlideshowSliceDefaultPrimaryPhotoItem {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   image: prismic.ImageField<"426x320" | "426x282" | "426x593">;
+
+  /**
+   * Image Format field in *PhotoSlideshow → Default → Primary → Photo*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: 426x568
+   * - **API ID Path**: photo_slideshow.default.primary.photo[].image_format
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  image_format: prismic.SelectField<
+    "426x568" | "426x320" | "426x282" | "426x593",
+    "filled"
+  >;
 }
 
 /**

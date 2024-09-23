@@ -15,7 +15,7 @@ const Teaser = ({ slice }: TeaserProps): JSX.Element => {
           <PrismicRichText field={slice.primary.description} />
           {slice.variation === "tarifs" && (
             slice.primary.button.map((item) => (
-            <PrismicNextLink key={item.label} field={item.link} className="button button-lg button-secondary-outline button-square">{item.label}</PrismicNextLink>
+            <PrismicNextLink target="_self" key={item.label} field={item.link} className="button button-lg button-secondary-outline button-square">{item.label}</PrismicNextLink>
           )))}
         </div>
       </div>

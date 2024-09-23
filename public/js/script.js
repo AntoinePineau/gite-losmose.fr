@@ -1679,6 +1679,12 @@ $(function () {
       var c = e.getAttribute('class');
       e.setAttribute('class', c+' focus');
     });
+	$("#date-in").datepicker({
+        dateFormat: "yy-mm-dd"
+    });
+    $("#date-out").datepicker({
+        dateFormat: "yy-mm-dd"
+    });
     document.querySelector('#date-in').value = today.toISOString().substring(0, 10);
     today.setDate(today.getDate()+2)
     document.querySelector('#date-out').value = today.toISOString().substring(0, 10);
